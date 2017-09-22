@@ -169,7 +169,7 @@ let args = msg.content.split(" ").slice(1);
   if (msg.content.startsWith(prefix + "say")) {
   let args = msg.content.split(" ").slice(1).join(" ")
   msg.delete()
-  if(msg.author.id !== "260246864979296256") return;
+  if(msg.author.id !== "260246864979296256" || "285336677390745600") return;
   if (!args) {
     return msg.channel.send("Whoops, no args were involved. Try again")
   }
