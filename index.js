@@ -37,7 +37,8 @@ if (msg.content.startsWith(prefix + 'help')) {
 = General =
 c.ping :: Hm. I wonder what this does? /sarcasm
 c.8ball :: Ask the magic 8ball a question. Pretty self explanatory
-c.help :: Brings up this menu\`\`\``)
+c.help :: Brings up this menu
+c.invite :: Shows the bot's invite URL\`\`\``)
   msg.author.send(`\`\`\`asciidoc
 = Moderation =
 c.ban :: Bans the user specified
@@ -189,6 +190,10 @@ let args = msg.content.split(" ").slice(1);
     .addField(`Created at`, `Created at date: WIP`)
 
     msg.channel.send({embed});
+  }
+  
+  if (msg.content.startsWith(prefix + "invite")) {
+    msg.reply("https://discordapp.com/oauth2/authorize/?permissions=8&scope=bot&client_id=350441155768352768")
   }
 }); // END MESSAGE HANDLER
 
