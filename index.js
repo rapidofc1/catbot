@@ -32,7 +32,7 @@ client.on('message', msg => { // START MESSAGE HANDLER
 }
 
 if (msg.content.startsWith(prefix + 'help')) {
-  msg.channel.send(":inbox_tray: | My commands have been sent to you via DM.")
+  msg.channel.send(":inbox_tray: | I've sent a full list of commands to your DM's.")
   msg.author.send(`\`\`\`asciidoc
 = General =
 c.ping :: Hm. I wonder what this does? /sarcasm
