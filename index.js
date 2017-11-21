@@ -45,16 +45,11 @@ c.ban :: Bans the user specified
 c.kick :: Kicks the user specified
 c.softban :: Softbans the specified user\`\`\``)
   msg.author.send(`\`\`\`asciidoc
-= Keywords =
+= Other Shit =
 google it :: Shows a "you can google it" image
 boof :: Uh, shows the "boof dog" image. It'll become clearer when you see it
 BOYE :: riceBOYE (best doggo)\`\`\``)
   msg.author.send(`\`\`\`asciidoc
-= Bot Owner Commands =
-c.restart :: Restarts Catbot
-c.eval :: Evaluates arbitrary JavaScript code
-c.say :: Outputs the inputted arguments (anything after c.say), else, if there's no args, return\`\`\``)
-  msg.author.send("For the moderation commands to log properly, a channel named `mod-logs` must be provided.")
 }
 
 let args = msg.content.split(" ").slice(1);
